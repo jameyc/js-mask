@@ -6,12 +6,16 @@ A Vim plugin that makes your javascripts look more concise. The original intenti
 The functionality can be described in this code below.
 
 Before:
+```js
     function Add(b, c) { return b + c; };
     setTimeout(function(){ console.log("wooot") }, 10);
+```
 
 After:
+```js
     Î» Add(b, c) { return b + c };
-    setTimeout(Î»() { console.log("woooot") }, 10);í±“{ console.log("wooot") }, 10);
+    setTimeout(Î»() { console.log("woooot") }, 10);ï¿½ï¿½ï¿½{ console.log("wooot") }, 10);
+```
 
 That's it.
 
@@ -29,16 +33,6 @@ How Does It Work?
 -----------------
 
 You still write the code in normal javascript. This plugin just makes it *looks* concise. It does *not* alter your code. The concealed parts will expand back to normal when you put the cursor at the containing line. Or when you open the code from another editor.
-
-Want to make it even more concise? To hide the text completely, put your Vim into normal mode and type:
-    :set cole=3
-The author is not responsible for the resulting headache.
-
-To expand *all* concealed text, type:
-    :set cole=0
-
-To conceal them back using this plugin settings, type:
-    :set cole=2
 
 It Doesn't Do Much!
 -------------------
