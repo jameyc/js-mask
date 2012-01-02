@@ -10,8 +10,8 @@ Before:
     setTimeout(function(){ console.log("wooot") }, 10);
 
 After:
-    ğ‘“ Add(b, c) { return b + c; };
-    setTimeout(ğ‘“{ console.log("wooot") }, 10);
+    Î» Add(b, c) { return b + c };
+    setTimeout(Î»() { console.log("woooot") }, 10);í±“{ console.log("wooot") }, 10);
 
 That's it.
 
