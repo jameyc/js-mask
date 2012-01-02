@@ -1,4 +1,4 @@
-js-mask: Give Your JavaScript A Beautiful Mask So It Wouldn't Look Ugly
+js-mask: Because 'λ' is shorter than 'function'
 =======================================================================
 
 A Vim plugin that makes your javascripts look more concise. The original intention is to make anonymous function less verbose and easier to understand at a glance. Requires Vim at least version 7.3.
@@ -6,15 +6,19 @@ A Vim plugin that makes your javascripts look more concise. The original intenti
 The functionality can be described in this code below.
 
 Before:
+
 ```js
     function Add(b, c) { return b + c; };
+    var log = function(txt) { console.log(txt) };
     setTimeout(function(){ console.log("wooot") }, 10);
 ```
 
 After:
+
 ```js
     λ Add(b, c) { return b + c };
-    setTimeout(λ() { console.log("woooot") }, 10);���{ console.log("wooot") }, 10);
+    var log = λ(txt) { console.log(txt) };
+    setTimeout(λ() { console.log("woooot") }, 10);
 ```
 
 That's it.
